@@ -5,7 +5,7 @@ pipeline {
            steps{
                git 'https://github.com/supanja/sample.git' 
            }        
-       }
+       } 
        stage('build the code'){
            steps{
               sh 'mvn package'
