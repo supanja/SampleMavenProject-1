@@ -1,7 +1,7 @@
 pipeline {
    agent any
    triggers{
-     upstream(upstreamProjects: 'SAMPLE', threshold: hudson.model.Result.FAIL)
+     upstream(upstreamProjects: 'SAMPLE', threshold: hudson.model.Result.FAILED)
    }
    stages{ 
        stage('git clone'){
