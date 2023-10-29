@@ -6,7 +6,7 @@ pipeline {
                git credentialsId: '627d81ae-5ed6-471b-afc8-90c69fadd554', url: 'https://github.com/devops-surya/SampleMavenProject.git'
            }        
        }
-       stage('build the code'){
+       stage('build the code'){   
            steps{
               sh 'mvn package'
            }
